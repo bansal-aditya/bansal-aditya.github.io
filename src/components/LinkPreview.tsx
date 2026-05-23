@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
-import { createPortal } from "react-dom";
+import { createContext, useContext, useState } from "react";
 
 interface PreviewData {
   title: string;
@@ -16,8 +15,51 @@ export interface LinkWithPreview {
   preview: PreviewData;
 }
 
+const PreviewContext = createContext<{
+  active: PreviewData | null;
+  setActive: (p: PreviewData | null) => void;
+}>({ active: null, setActive: () => {} });
+
 export function PreviewProvider({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  const [active, setActive] = useState<PreviewData | null>(null);
+
+  return (
+    <PreviewContext.Provider value={{ active, setActive }}>
+      <div className="flex gap-6 items-start">
+        <div className="flex-1 min-w-0">{children}</div>
+        <div className="hidden md:block w-[180px] flex-shrink-0">
+          <div className="sticky top-20">
+            <div
+              className={`transition-all duration-200 ${
+                active
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-2 pointer-events-none"
+              }`}
+            >
+              {active && (
+                <div className="bg-white border border-divider rounded-xl p-3.5 shadow-sm">
+                  <img
+                    src={active.favicon}
+                    alt=""
+                    className="w-6 h-6 rounded mb-2"
+                  />
+                  <div className="text-[12px] font-semibold text-foreground">
+                    {active.title}
+                  </div>
+                  <div className="text-[10px] text-secondary mt-0.5">
+                    {active.domain}
+                  </div>
+                  <div className="text-[10px] text-muted mt-1.5 leading-[1.4]">
+                    {active.description}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </PreviewContext.Provider>
+  );
 }
 
 export function PreviewLink({
@@ -31,69 +73,18 @@ export function PreviewLink({
   preview: PreviewData;
   className?: string;
 }) {
-  const [pos, setPos] = useState<{ top: number; left: number } | null>(null);
-  const linkRef = useRef<HTMLAnchorElement>(null);
-
-  const handleEnter = () => {
-    if (!linkRef.current) return;
-    const rect = linkRef.current.getBoundingClientRect();
-    setPos({
-      top: rect.top - 8,
-      left: rect.left + rect.width / 2,
-    });
-  };
-
-  const handleLeave = () => {
-    setPos(null);
-  };
+  const { setActive } = useContext(PreviewContext);
 
   return (
-    <>
-      <a
-        ref={linkRef}
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`text-link hover:underline ${className}`}
-        onMouseEnter={handleEnter}
-        onMouseLeave={handleLeave}
-      >
-        {text}
-      </a>
-      {pos &&
-        typeof document !== "undefined" &&
-        createPortal(
-          <span
-            className="fixed z-[100] pointer-events-none"
-            style={{
-              top: pos.top,
-              left: pos.left,
-              transform: "translate(-50%, -100%)",
-            }}
-          >
-            <span className="block bg-white border border-divider rounded-xl p-3 shadow-lg w-[240px] animate-fade-in">
-              <span className="flex gap-2.5 items-start">
-                <img
-                  src={preview.favicon}
-                  alt=""
-                  className="w-5 h-5 rounded flex-shrink-0 mt-0.5"
-                />
-                <span className="block min-w-0">
-                  <span className="block text-[11.5px] font-semibold text-foreground leading-tight">
-                    {preview.title}
-                  </span>
-                  <span className="block text-[10px] text-secondary mt-0.5">
-                    {preview.domain}
-                  </span>
-                  <span className="block text-[10px] text-muted mt-1 leading-[1.4]">
-                    {preview.description}
-                  </span>
-                </span>
-              </span>
-            </span>
-          </span>,
-          document.body
-        )}
-    </>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`text-link hover:underline ${className}`}
+      onMouseEnter={() => setActive(preview)}
+      onMouseLeave={() => setActive(null)}
+    >
+      {text}
+    </a>
   );
 }
