@@ -11,7 +11,7 @@ export default function Hero() {
           alt={profile.name}
           width={160}
           height={160}
-          className="object-cover w-full h-full scale-125"
+          className="object-cover w-full h-full scale-125 object-[center_30%]"
           priority
         />
       </div>
