@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 interface PreviewData {
   title: string;
@@ -9,72 +9,85 @@ interface PreviewData {
   favicon: string;
 }
 
-interface LinkWithPreview {
+export interface LinkWithPreview {
   href: string;
   text: string;
   preview: PreviewData;
 }
 
-export default function LinkPreviewGroup({
-  children,
-  links,
-}: {
-  children: (renderLink: (id: string) => React.ReactNode) => React.ReactNode;
-  links: Record<string, LinkWithPreview>;
-}) {
-  const [activePreview, setActivePreview] = useState<string | null>(null);
+// Context for sharing hover state within a preview group
+const PreviewContext = createContext<{
+  active: PreviewData | null;
+  setActive: (p: PreviewData | null) => void;
+}>({ active: null, setActive: () => {} });
 
-  const renderLink = (id: string) => {
-    const link = links[id];
-    if (!link) return null;
-    return (
-      <a
-        href={link.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-link hover:underline"
-        onMouseEnter={() => setActivePreview(id)}
-        onMouseLeave={() => setActivePreview(null)}
-      >
-        {link.text}
-      </a>
-    );
-  };
-
-  const active = activePreview ? links[activePreview] : null;
+// Wrap a section with this to get a shared preview panel on the right
+export function PreviewProvider({ children }: { children: React.ReactNode }) {
+  const [active, setActive] = useState<PreviewData | null>(null);
 
   return (
-    <div className="flex gap-6 items-start">
-      <div className="flex-1 min-w-0">{children(renderLink)}</div>
-      <div className="hidden md:block w-[180px] flex-shrink-0 relative">
-        {Object.entries(links).map(([id, link]) => (
-          <div
-            key={id}
-            className={`absolute top-0 transition-all duration-200 ${
-              activePreview === id
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-2 pointer-events-none"
-            }`}
-          >
-            <div className="bg-white border border-divider rounded-xl p-3.5 shadow-sm">
-              <img
-                src={link.preview.favicon}
-                alt=""
-                className="w-6 h-6 rounded mb-2"
-              />
-              <div className="text-[12px] font-semibold text-foreground">
-                {link.preview.title}
-              </div>
-              <div className="text-[10px] text-secondary mt-0.5">
-                {link.preview.domain}
-              </div>
-              <div className="text-[10px] text-muted mt-1.5 leading-[1.4]">
-                {link.preview.description}
-              </div>
+    <PreviewContext.Provider value={{ active, setActive }}>
+      <div className="flex gap-6 items-start">
+        <div className="flex-1 min-w-0">{children}</div>
+        <div className="hidden md:block w-[180px] flex-shrink-0">
+          <div className="sticky top-20">
+            <div
+              className={`transition-all duration-200 ${
+                active
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-2 pointer-events-none"
+              }`}
+            >
+              {active && (
+                <div className="bg-white border border-divider rounded-xl p-3.5 shadow-sm">
+                  <img
+                    src={active.favicon}
+                    alt=""
+                    className="w-6 h-6 rounded mb-2"
+                  />
+                  <div className="text-[12px] font-semibold text-foreground">
+                    {active.title}
+                  </div>
+                  <div className="text-[10px] text-secondary mt-0.5">
+                    {active.domain}
+                  </div>
+                  <div className="text-[10px] text-muted mt-1.5 leading-[1.4]">
+                    {active.description}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+    </PreviewContext.Provider>
+  );
+}
+
+// Individual link with preview hover
+export function PreviewLink({
+  href,
+  text,
+  preview,
+  className = "",
+}: {
+  href: string;
+  text: string;
+  preview: PreviewData;
+  className?: string;
+}) {
+  const { setActive } = useContext(PreviewContext);
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`text-link hover:underline ${className}`}
+      onMouseEnter={() => setActive(preview)}
+      onMouseLeave={() => setActive(null)}
+    >
+      {text}
+    </a>
   );
 }
