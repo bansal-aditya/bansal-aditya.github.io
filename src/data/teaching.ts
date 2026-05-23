@@ -21,12 +21,16 @@ export const teaching: TeachingItem[] = [
     role: "Graduate AI Mentor (PAIR Program)",
     organization: "Carnegie Mellon University",
     description: "Mentored undergraduate students to pursue AI/ML research through the Paths to AI Research Program, promoting research among underrepresented students.",
+    link: "https://sites.google.com/andrew.cmu.edu/ai-mentoring",
+    linkText: "PAIR Program",
   },
   {
     dateRange: "Fall 2023",
     role: "Graduate Teaching Assistant — Machine Learning in Practice (05-834)",
     organization: "Carnegie Mellon University, under Prof Carolyn Rose",
     description: "Conducted recitations, homework sessions, office hours, and grading for ~110 students.",
+    link: "https://www.hcii.cmu.edu/course/applied-machine-learning",
+    linkText: "Course Page",
   },
   {
     dateRange: "Spring 2023",
@@ -34,13 +38,15 @@ export const teaching: TeachingItem[] = [
     organization: "Carnegie Mellon University, under Prof Matt Gormley",
     description: "Conducted recitations, homework sessions, office hours, and grading for ~300 students.",
     link: "https://www.cs.cmu.edu/~mgormley/courses/10601/",
-    linkText: "Course Webpage",
+    linkText: "Course Page",
   },
   {
     dateRange: "Fall 2023",
     role: "Mathematics Tutor (PLUS Program)",
     organization: "CMU & Stanford",
     description: "Held weekly sessions for ~15 middle school students through a personalized math tutoring program combining human + AI.",
+    link: "https://www.tutors.plus/",
+    linkText: "PLUS Program",
   },
   {
     dateRange: "Fall 2021",

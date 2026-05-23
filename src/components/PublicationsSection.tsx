@@ -33,7 +33,7 @@ export default function PublicationsSection() {
                 <span className="text-muted"> · Cited by {pub.citations}</span>
               )}
             </div>
-            <div className="flex gap-2.5 mt-1.5">
+            <div className="flex gap-3 mt-1.5">
               {pub.links.paper && (
                 <a
                   href={pub.links.paper}
@@ -41,7 +41,7 @@ export default function PublicationsSection() {
                   rel="noopener noreferrer"
                   className="text-[11.5px] text-link hover:underline"
                 >
-                  [paper]
+                  Paper ↗
                 </a>
               )}
               {pub.links.code && (
@@ -51,7 +51,7 @@ export default function PublicationsSection() {
                   rel="noopener noreferrer"
                   className="text-[11.5px] text-link hover:underline"
                 >
-                  [code]
+                  Code ↗
                 </a>
               )}
               {pub.links.video && (
@@ -61,7 +61,7 @@ export default function PublicationsSection() {
                   rel="noopener noreferrer"
                   className="text-[11.5px] text-link hover:underline"
                 >
-                  [video]
+                  Video ↗
                 </a>
               )}
               {pub.links.slides && (
@@ -71,7 +71,7 @@ export default function PublicationsSection() {
                   rel="noopener noreferrer"
                   className="text-[11.5px] text-link hover:underline"
                 >
-                  [slides]
+                  Slides ↗
                 </a>
               )}
             </div>

@@ -23,14 +23,14 @@ export default function TeachingSection() {
               {item.description}
               {item.link && item.linkText && (
                 <>
-                  {" "}
+                  {" · "}
                   <a
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-link hover:underline"
                   >
-                    [{item.linkText}]
+                    {item.linkText} ↗
                   </a>
                 </>
               )}
