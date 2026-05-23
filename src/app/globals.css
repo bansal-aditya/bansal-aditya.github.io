@@ -8,5 +8,20 @@
   --color-link: #0066cc;
   --color-divider: #eceae0;
   --font-sans: "Inter", system-ui, sans-serif;
-  --max-width-content: 720px;
+  --max-width-content: 800px;
+}
+
+/* Subtle scrollbar for scrollable sections */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 4px;
+}
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #d5d4cb;
+  border-radius: 4px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
 }
