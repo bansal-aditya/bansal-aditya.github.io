@@ -39,13 +39,13 @@ export default function Hero() {
         <div className="mt-3">
           <PreviewProvider>
             <p className="text-[13.5px] leading-[1.75] text-muted">
-              Hello! I am a Machine Learning Engineer at Adobe where I am building Enterprise AI Agents. I graduated from Carnegie Mellon University&apos;s{" "}
+              Hello! I am a Machine Learning Engineer at Adobe where I am building Enterprise AI Agents. I graduated from{" "}
               <PreviewLink
                 href="https://www.lti.cs.cmu.edu/"
-                text="Language Technologies Institute"
+                text="Carnegie Mellon University's" 
                 preview={ltiPreview}
               />
-              {" "}with a Master&apos;s and a B.Eng. in Computer Science with a specialization in AI from{" "}
+              {" "}Language Technologies Institute with a Master&apos;s and with a B.Eng. in Computer Science with a specialization in AI from{" "}
               <PreviewLink
                 href="https://www.ntu.edu.sg/computing"
                 text="Nanyang Technological University"

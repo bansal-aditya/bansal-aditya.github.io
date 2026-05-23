@@ -19,7 +19,7 @@ export const experience: ExperienceItem[] = [
     company: "Adobe",
     role: "ML Engineer Intern, Intelligent Services",
     logo: "/images/logos/adobe.png",
-    description: "Developed tool-augmented LLM application for API execution and task planning",
+    description: "Tool-augmented LLM application for API execution and task planning",
   },
 
   {
