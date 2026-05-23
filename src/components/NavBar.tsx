@@ -7,7 +7,6 @@ const navLinks = [
   { label: "Experience", href: "#experience" },
   { label: "Publications", href: "#publications" },
   { label: "Teaching", href: "#teaching" },
-  { label: "Community", href: "#community" },
 ];
 
 export default function NavBar() {
