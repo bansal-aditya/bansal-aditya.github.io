@@ -1,7 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useRef } from "react";
-import { createPortal } from "react-dom";
+import { createContext, useContext, useState } from "react";
 
 interface PreviewData {
   title: string;
@@ -84,72 +83,17 @@ export function PreviewLink({
   icon?: React.ReactNode;
 }) {
   const { setActive } = useContext(PreviewContext);
-  const [mobileShow, setMobileShow] = useState(false);
-  const linkRef = useRef<HTMLAnchorElement>(null);
-  const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 });
-
-  const handleEnter = () => {
-    setActive(preview);
-    // For mobile tooltip fallback
-    if (typeof window !== "undefined" && window.innerWidth < 768 && linkRef.current) {
-      const rect = linkRef.current.getBoundingClientRect();
-      setTooltipPos({
-        top: rect.top - 8,
-        left: rect.left + rect.width / 2,
-      });
-      setMobileShow(true);
-    }
-  };
-
-  const handleLeave = () => {
-    setActive(null);
-    setMobileShow(false);
-  };
 
   return (
-    <>
-      <a
-        ref={linkRef}
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`text-link hover:underline ${className}`}
-        onMouseEnter={handleEnter}
-        onMouseLeave={handleLeave}
-      >
-        {text}{icon}
-      </a>
-      {mobileShow &&
-        typeof document !== "undefined" &&
-        createPortal(
-          <span
-            className="fixed z-[100] pointer-events-none md:hidden"
-            style={{
-              top: tooltipPos.top,
-              left: Math.min(Math.max(tooltipPos.left, 130), window.innerWidth - 130),
-              transform: "translate(-50%, -100%)",
-            }}
-          >
-            <span className="block bg-white border border-divider rounded-lg p-2.5 shadow-lg w-[220px] animate-fade-in">
-              <span className="flex gap-2 items-start">
-                <img
-                  src={preview.favicon}
-                  alt=""
-                  className="w-4 h-4 rounded flex-shrink-0 mt-0.5"
-                />
-                <span className="block min-w-0">
-                  <span className="block text-[11px] font-semibold text-foreground leading-tight">
-                    {preview.title}
-                  </span>
-                  <span className="block text-[9px] text-secondary mt-0.5">
-                    {preview.domain}
-                  </span>
-                </span>
-              </span>
-            </span>
-          </span>,
-          document.body
-        )}
-    </>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`text-link hover:underline ${className}`}
+      onMouseEnter={() => setActive(preview)}
+      onMouseLeave={() => setActive(null)}
+    >
+      {text}{icon}
+    </a>
   );
 }
