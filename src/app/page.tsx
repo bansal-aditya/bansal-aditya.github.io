@@ -20,10 +20,10 @@ export default function Home() {
           <NewsSection />
         </AnimateOnScroll>
         <AnimateOnScroll delay={400}>
-          <PublicationsSection />
+          <ExperienceSection />
         </AnimateOnScroll>
         <AnimateOnScroll delay={0}>
-          <ExperienceSection />
+          <PublicationsSection />
         </AnimateOnScroll>
         <AnimateOnScroll delay={0}>
           <TeachingSection />
