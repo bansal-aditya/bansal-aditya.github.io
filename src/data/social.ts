@@ -6,6 +6,11 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
   {
+    platform: "linkedin",
+    url: "https://www.linkedin.com/in/aditya-bansal-10",
+    label: "LinkedIn",
+  },
+  {
     platform: "scholar",
     url: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
     label: "Google Scholar",
@@ -14,11 +19,6 @@ export const socialLinks: SocialLink[] = [
     platform: "github",
     url: "https://github.com/bansal-aditya",
     label: "GitHub",
-  },
-  {
-    platform: "linkedin",
-    url: "https://www.linkedin.com/in/aditya-bansal-10",
-    label: "LinkedIn",
   },
   {
     platform: "twitter",

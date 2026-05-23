@@ -15,6 +15,8 @@ export const news: NewsItem[] = [
   {
     date: "Feb 2026",
     description: "Joined YMCA of San Francisco as Board Member, Urban Philanthropy Board",
+    link: "https://www.ymca.org/locations/urban-services-ymca",
+    linkText: "YMCA of San Francisco",
   },
   {
     date: "Apr 2025",
@@ -33,6 +35,8 @@ export const news: NewsItem[] = [
   {
     date: "Oct 2023",
     description: "1st Prize, CMU HackAuton 2023 — Sustainable AI",
+    link: "https://autonlab.org/hackAuton/winners/",
+    linkText: "HackAuton 2023",
   },
   {
     date: "Nov 2022",
