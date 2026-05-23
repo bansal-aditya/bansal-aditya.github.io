@@ -75,11 +75,13 @@ export function PreviewLink({
   text,
   preview,
   className = "",
+  icon,
 }: {
   href: string;
   text: string;
   preview: PreviewData;
   className?: string;
+  icon?: React.ReactNode;
 }) {
   const { setActive } = useContext(PreviewContext);
   const [mobileShow, setMobileShow] = useState(false);
@@ -115,7 +117,7 @@ export function PreviewLink({
         onMouseEnter={handleEnter}
         onMouseLeave={handleLeave}
       >
-        {text}
+        {text}{icon}
       </a>
       {mobileShow &&
         typeof document !== "undefined" &&

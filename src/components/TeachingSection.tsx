@@ -3,6 +3,12 @@
 import { teaching } from "@/data/teaching";
 import { PreviewProvider, PreviewLink } from "./LinkPreview";
 
+const ArrowIcon = () => (
+  <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block ml-0.5 -mt-0.5">
+    <path d="M5 11L11 5M11 5H6M11 5V10" />
+  </svg>
+);
+
 export default function TeachingSection() {
   return (
     <section id="teaching" className="border-t border-divider py-7">
@@ -23,9 +29,10 @@ export default function TeachingSection() {
                     {item.preview ? (
                       <PreviewLink
                         href={item.link}
-                        text={`${item.linkText} ↗`}
+                        text={item.linkText}
                         preview={item.preview}
                         className="text-[12px]"
+                        icon={<ArrowIcon />}
                       />
                     ) : (
                       <a
@@ -34,7 +41,8 @@ export default function TeachingSection() {
                         rel="noopener noreferrer"
                         className="text-link hover:underline text-[12px]"
                       >
-                        {item.linkText} ↗
+                        {item.linkText}
+                        <ArrowIcon />
                       </a>
                     )}
                   </>
