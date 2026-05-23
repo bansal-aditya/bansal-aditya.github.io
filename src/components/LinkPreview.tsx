@@ -64,7 +64,7 @@ export function PreviewLink({
         {text}
       </a>
       {show && (
-        <div
+        <span
           className="fixed z-[100] pointer-events-none"
           style={{
             top: pos.top,
@@ -72,27 +72,27 @@ export function PreviewLink({
             transform: "translate(-50%, -100%)",
           }}
         >
-          <div className="bg-white border border-divider rounded-xl p-3 shadow-lg w-[240px] animate-fade-in">
-            <div className="flex gap-2.5 items-start">
+          <span className="block bg-white border border-divider rounded-xl p-3 shadow-lg w-[240px] animate-fade-in">
+            <span className="flex gap-2.5 items-start">
               <img
                 src={preview.favicon}
                 alt=""
                 className="w-5 h-5 rounded flex-shrink-0 mt-0.5"
               />
-              <div className="min-w-0">
-                <div className="text-[11.5px] font-semibold text-foreground leading-tight">
+              <span className="block min-w-0">
+                <span className="block text-[11.5px] font-semibold text-foreground leading-tight">
                   {preview.title}
-                </div>
-                <div className="text-[10px] text-secondary mt-0.5">
+                </span>
+                <span className="block text-[10px] text-secondary mt-0.5">
                   {preview.domain}
-                </div>
-                <div className="text-[10px] text-muted mt-1 leading-[1.4]">
+                </span>
+                <span className="block text-[10px] text-muted mt-1 leading-[1.4]">
                   {preview.description}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
       )}
     </>
   );
