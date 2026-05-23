@@ -26,7 +26,14 @@ export default function NavBar() {
       }`}
     >
       <div className="mx-auto max-w-content px-8">
-        <div className="flex items-center justify-end py-3">
+        <div className="flex items-center justify-between py-3">
+          <a
+            href="#"
+            className="text-[15px] font-bold text-foreground hover:text-foreground/80 transition-colors"
+          >
+            Aditya Bansal
+          </a>
+
           {/* Desktop links */}
           <div className="hidden gap-5 md:flex">
             {navLinks.map((link) => (
