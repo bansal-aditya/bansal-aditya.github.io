@@ -6,6 +6,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import TeachingSection from "@/components/TeachingSection";
 
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
 
         <Footer />
       </main>
+      <BackToTop />
     </>
   );
 }
