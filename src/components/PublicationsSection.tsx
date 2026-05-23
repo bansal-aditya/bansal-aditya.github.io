@@ -27,9 +27,12 @@ export default function PublicationsSection() {
                   href={pub.links.paper}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-link transition-colors"
+                  className="hover:text-link transition-colors inline-flex items-baseline gap-1.5"
                 >
                   {pub.title}
+                  <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block flex-shrink-0 opacity-40 translate-y-[1px]">
+                    <path d="M6 3h7v7M13 3L6 10" />
+                  </svg>
                 </a>
               ) : (
                 pub.title
