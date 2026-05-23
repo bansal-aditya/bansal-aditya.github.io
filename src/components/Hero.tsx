@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 export default function Hero() {
   return (
     <section className="flex flex-col items-center gap-7 pt-12 pb-9 md:flex-row md:items-center">
-      <div className="flex-shrink-0 w-[160px] h-[160px] rounded-[40px] overflow-hidden">
+      <div className="flex-shrink-0 w-[160px] h-[160px] rounded-full overflow-hidden">
         <Image
           src={profile.image}
           alt={profile.name}
