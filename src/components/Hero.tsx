@@ -19,10 +19,7 @@ export default function Hero() {
         <h1 className="text-[26px] font-bold tracking-tight text-foreground">
           {profile.name}
         </h1>
-        <p className="mt-1 text-[15px] text-[#444]">
-          {profile.title}
-        </p>
-        <p className="mt-3.5 text-[13.5px] leading-[1.75] text-muted max-w-[520px]">
+        <p className="mt-3 text-[13.5px] leading-[1.75] text-muted max-w-[520px]">
           {profile.bio}
         </p>
         <SocialLinks />

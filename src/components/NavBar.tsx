@@ -15,11 +15,7 @@ export default function NavBar() {
 
   return (
     <nav className="mx-auto max-w-content border-b border-divider px-8">
-      <div className="flex items-center justify-between py-4">
-        <a href="#" className="text-[15px] font-bold text-foreground">
-          Aditya Bansal
-        </a>
-
+      <div className="flex items-center justify-end py-4">
         {/* Desktop links */}
         <div className="hidden gap-5 md:flex">
           {navLinks.map((link) => (
