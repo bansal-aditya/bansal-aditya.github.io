@@ -10,6 +10,16 @@ export interface Publication {
     video?: string;
     slides?: string;
   };
+  preview?: {
+    title: string;
+    domain: string;
+    description: string;
+    favicon: string;
+  };
+}
+
+function gfav(domain: string) {
+  return `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
 }
 
 export const publications: Publication[] = [
@@ -21,6 +31,7 @@ export const publications: Publication[] = [
     links: {
       paper: "https://arxiv.org/abs/2601.21060",
     },
+    preview: { title: "arXiv Preprint", domain: "arxiv.org", description: "Human-LLM Collaborative Feature Engineering for Tabular Data", favicon: gfav("arxiv.org") },
   },
   {
     title: "Compressing VAE-Based Out-of-Distribution Detectors for Embedded Deployment",
@@ -30,6 +41,7 @@ export const publications: Publication[] = [
     links: {
       paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
     },
+    preview: { title: "Google Scholar", domain: "scholar.google.com", description: "Compressing VAE-Based OOD Detectors for Embedded Deployment", favicon: gfav("scholar.google.com") },
   },
   {
     title: "Using Explainable AI Methods to Explain Bias in Brain Age Prediction",
@@ -40,6 +52,7 @@ export const publications: Publication[] = [
       paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
       video: "https://www.youtube.com/watch?v=YLWHUM8X52E&list=PLPuBpVL5aDFuZbYIifwUWmwh1ntBpnvP0&index=3",
     },
+    preview: { title: "Google Scholar", domain: "scholar.google.com", description: "Using Explainable AI to explain Bias in Brain Age Prediction", favicon: gfav("scholar.google.com") },
   },
   {
     title: "Classification of EEG Signals for Brain Computer Interfaces: A Machine Learning Approach",
@@ -49,6 +62,7 @@ export const publications: Publication[] = [
     links: {
       paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
     },
+    preview: { title: "Google Scholar", domain: "scholar.google.com", description: "Classification of EEG Signals for Brain Computer Interfaces", favicon: gfav("scholar.google.com") },
   },
   {
     title: "Neural Network Compression Techniques for Out-of-Distribution Detection",
@@ -58,5 +72,6 @@ export const publications: Publication[] = [
     links: {
       paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
     },
+    preview: { title: "Google Scholar", domain: "scholar.google.com", description: "Neural Network Compression for OOD Detection — B.Eng Thesis", favicon: gfav("scholar.google.com") },
   },
 ];

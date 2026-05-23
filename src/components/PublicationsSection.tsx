@@ -1,4 +1,7 @@
+"use client";
+
 import { publications } from "@/data/publications";
+import { PreviewLink } from "./LinkPreview";
 
 function highlightAuthor(authors: string): React.ReactNode {
   const parts = authors.split(/(A Bansal)/);
@@ -22,7 +25,20 @@ export default function PublicationsSection() {
             className={`py-2.5 ${i < publications.length - 1 ? "border-b border-divider/50" : ""}`}
           >
             <div className="text-[13.5px] font-semibold text-foreground leading-snug">
-              {pub.links.paper ? (
+              {pub.links.paper && pub.preview ? (
+                <span className="inline-flex items-baseline gap-1.5">
+                  <PreviewLink
+                    href={pub.links.paper}
+                    text={pub.title}
+                    preview={pub.preview}
+                    className="text-foreground hover:text-link transition-colors font-semibold"
+                  />
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="inline-block flex-shrink-0 opacity-40 translate-y-[1px]">
+                    <path d="M9 2H4.5A1.5 1.5 0 003 3.5v9A1.5 1.5 0 004.5 14h7a1.5 1.5 0 001.5-1.5V8" />
+                    <path d="M5 11l8-8M10 2h4v4" />
+                  </svg>
+                </span>
+              ) : pub.links.paper ? (
                 <a
                   href={pub.links.paper}
                   target="_blank"
