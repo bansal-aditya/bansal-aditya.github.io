@@ -1,7 +1,7 @@
 "use client";
 
 import { publications } from "@/data/publications";
-import { PreviewLink } from "./LinkPreview";
+import { PreviewProvider, PreviewLink } from "./LinkPreview";
 
 function highlightAuthor(authors: string): React.ReactNode {
   const parts = authors.split(/(A Bansal)/);
@@ -18,6 +18,7 @@ export default function PublicationsSection() {
   return (
     <section id="publications" className="border-t border-divider py-7">
       <h2 className="text-lg font-bold mb-4.5">Publications</h2>
+      <PreviewProvider>
       <div>
         {publications.map((pub, i) => (
           <div
@@ -91,6 +92,7 @@ export default function PublicationsSection() {
           </div>
         ))}
       </div>
+      </PreviewProvider>
     </section>
   );
 }
