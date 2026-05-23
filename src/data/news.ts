@@ -7,43 +7,43 @@ export interface NewsItem {
 
 export const news: NewsItem[] = [
   {
-    date: "2026",
+    date: "Jan 2026",
     description: "Paper on Human-LLM Collaborative Feature Engineering published at ICLR 2026",
     link: "https://arxiv.org/abs/2601.21060",
     linkText: "Human-LLM Collaborative Feature Engineering",
   },
   {
-    date: "2026",
+    date: "Feb 2026",
     description: "Joined YMCA of San Francisco as Board Member, Urban Philanthropy Board",
   },
   {
-    date: "2025",
+    date: "Apr 2025",
     description: "Serving as ACL Industry Track Paper Reviewer (ACL 2025, 2026)",
   },
   {
-    date: "2024",
+    date: "Aug 2024",
     description: "Paper on Compressing VAE-Based OOD Detectors accepted at IEEE RTCSA 2024",
     link: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
     linkText: "Compressing VAE-Based OOD Detectors",
   },
   {
-    date: "2024",
+    date: "Oct 2024",
     description: "Winner, Cal Hacks @ Berkeley 2024 — Vespa Track",
   },
   {
-    date: "2023",
+    date: "Oct 2023",
     description: "1st Prize, CMU HackAuton 2023 — Sustainable AI",
   },
   {
-    date: "2022",
+    date: "Nov 2022",
     description: "Winners, CMU AutoML Decathlon 2022",
   },
   {
-    date: "2022",
+    date: "May 2022",
     description: "NTU President Research Scholar Award for excellence in URECA Research",
   },
   {
-    date: "2021",
+    date: "Aug 2021",
     description: "3rd Prize Best Paper Award at STCAI 2021 & NTU URECA Research Excellence Award",
     link: "https://www.youtube.com/watch?v=YLWHUM8X52E&list=PLPuBpVL5aDFuZbYIifwUWmwh1ntBpnvP0&index=3",
     linkText: "STCAI 2021",

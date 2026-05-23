@@ -19,60 +19,53 @@ export default function PublicationsSection() {
         {publications.map((pub, i) => (
           <div
             key={i}
-            className={`py-3.5 ${i < publications.length - 1 ? "border-b border-divider/50" : ""}`}
+            className={`py-2.5 ${i < publications.length - 1 ? "border-b border-divider/50" : ""}`}
           >
-            <div className="text-[14.5px] font-semibold text-foreground">
-              {pub.title}
-            </div>
-            <div className="text-[12.5px] text-[#666] mt-1.5">
-              {highlightAuthor(pub.authors)}
-            </div>
-            <div className="text-[12.5px] text-secondary mt-0.5">
-              {pub.venue}
-              {pub.citations && pub.citations > 0 && (
-                <span className="text-muted"> · Cited by {pub.citations}</span>
-              )}
-            </div>
-            <div className="flex gap-3 mt-1.5">
-              {pub.links.paper && (
+            <div className="text-[13.5px] font-semibold text-foreground leading-snug">
+              {pub.links.paper ? (
                 <a
                   href={pub.links.paper}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[11.5px] text-link hover:underline"
+                  className="hover:text-link transition-colors"
                 >
-                  Paper ↗
+                  {pub.title}
                 </a>
+              ) : (
+                pub.title
               )}
-              {pub.links.code && (
-                <a
-                  href={pub.links.code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[11.5px] text-link hover:underline"
-                >
-                  Code ↗
-                </a>
+            </div>
+            <div className="text-[12px] text-[#666] mt-0.5">
+              {highlightAuthor(pub.authors)}
+              <span className="text-secondary"> · {pub.venue}</span>
+              {pub.citations && pub.citations > 0 && (
+                <span className="text-secondary"> · Cited by {pub.citations}</span>
               )}
               {pub.links.video && (
-                <a
-                  href={pub.links.video}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[11.5px] text-link hover:underline"
-                >
-                  Video ↗
-                </a>
+                <>
+                  {" · "}
+                  <a
+                    href={pub.links.video}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-link hover:underline"
+                  >
+                    Video ↗
+                  </a>
+                </>
               )}
-              {pub.links.slides && (
-                <a
-                  href={pub.links.slides}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[11.5px] text-link hover:underline"
-                >
-                  Slides ↗
-                </a>
+              {pub.links.code && (
+                <>
+                  {" · "}
+                  <a
+                    href={pub.links.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-link hover:underline"
+                  >
+                    Code ↗
+                  </a>
+                </>
               )}
             </div>
           </div>
