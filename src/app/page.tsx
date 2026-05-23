@@ -13,22 +13,22 @@ export default function Home() {
     <>
       <NavBar />
       <main className="mx-auto max-w-content px-8">
-        <AnimateOnScroll>
+        <AnimateOnScroll delay={100}>
           <Hero />
         </AnimateOnScroll>
-        <AnimateOnScroll>
+        <AnimateOnScroll delay={250}>
           <NewsSection />
         </AnimateOnScroll>
-        <AnimateOnScroll>
+        <AnimateOnScroll delay={400}>
           <PublicationsSection />
         </AnimateOnScroll>
-        <AnimateOnScroll>
+        <AnimateOnScroll delay={0}>
           <ExperienceSection />
         </AnimateOnScroll>
-        <AnimateOnScroll>
+        <AnimateOnScroll delay={0}>
           <TeachingSection />
         </AnimateOnScroll>
-        <AnimateOnScroll>
+        <AnimateOnScroll delay={0}>
           <CommunitySection />
         </AnimateOnScroll>
         <Footer />
