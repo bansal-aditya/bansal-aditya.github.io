@@ -24,8 +24,8 @@ export default function ExperienceSection() {
 
             {/* Timeline visual */}
             <div className="flex flex-col items-center flex-shrink-0 pt-1">
-              <div className={`w-2.5 h-2.5 rounded-full mt-2 flex-shrink-0 transition-colors duration-200 ${
-                hoveredIndex === i ? "bg-link" : "bg-secondary/40"
+              <div className={`w-2.5 h-2.5 rounded-full mt-[13px] flex-shrink-0 transition-colors duration-200 border-[1.5px] ${
+                hoveredIndex === i ? "border-link bg-link/20" : "border-secondary/50 bg-transparent"
               }`} />
               {i < experience.length - 1 && (
                 <div className="w-px flex-1 bg-divider" />
