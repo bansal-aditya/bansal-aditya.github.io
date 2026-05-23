@@ -19,10 +19,7 @@ export default function AnimateOnScroll({
     const timer = setTimeout(() => {
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(el);
-          }
+          setIsVisible(entry.isIntersecting);
         },
         { threshold: 0.05 }
       );
