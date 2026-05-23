@@ -30,8 +30,9 @@ export default function PublicationsSection() {
                   className="hover:text-link transition-colors inline-flex items-baseline gap-1.5"
                 >
                   {pub.title}
-                  <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block flex-shrink-0 opacity-40 translate-y-[1px]">
-                    <path d="M6 3h7v7M13 3L6 10" />
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="inline-block flex-shrink-0 opacity-40 translate-y-[1px]">
+                    <path d="M9 2H4.5A1.5 1.5 0 003 3.5v9A1.5 1.5 0 004.5 14h7a1.5 1.5 0 001.5-1.5V8" />
+                    <path d="M5 11l8-8M10 2h4v4" />
                   </svg>
                 </a>
               ) : (

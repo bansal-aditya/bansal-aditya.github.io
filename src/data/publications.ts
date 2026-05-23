@@ -27,7 +27,6 @@ export const publications: Publication[] = [
     authors: "A Bansal, M Yuhas, A Easwaran",
     venue: "IEEE RTCSA 2024",
     year: 2024,
-    citations: 4,
     links: {
       paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
     },
