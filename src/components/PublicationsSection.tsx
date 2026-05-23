@@ -71,7 +71,8 @@ export default function PublicationsSection() {
                     rel="noopener noreferrer"
                     className="text-link hover:underline"
                   >
-                    Video ↗
+                    Video
+                    <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block ml-0.5 -mt-0.5"><path d="M5 11L11 5M11 5H6M11 5V10" /></svg>
                   </a>
                 </>
               )}
@@ -84,7 +85,8 @@ export default function PublicationsSection() {
                     rel="noopener noreferrer"
                     className="text-link hover:underline"
                   >
-                    Code ↗
+                    Code
+                    <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block ml-0.5 -mt-0.5"><path d="M5 11L11 5M11 5H6M11 5V10" /></svg>
                   </a>
                 </>
               )}

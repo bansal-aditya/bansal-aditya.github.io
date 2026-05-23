@@ -31,7 +31,7 @@ export default function TeachingSection() {
                         href={item.link}
                         text={item.linkText}
                         preview={item.preview}
-                        className="text-[12px]"
+                        className="text-[13px]"
                         icon={<ArrowIcon />}
                       />
                     ) : (
@@ -39,7 +39,7 @@ export default function TeachingSection() {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-link hover:underline text-[12px]"
+                        className="text-link hover:underline text-[13px]"
                       >
                         {item.linkText}
                         <ArrowIcon />
