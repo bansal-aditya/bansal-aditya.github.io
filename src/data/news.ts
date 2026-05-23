@@ -3,7 +3,16 @@ export interface NewsItem {
   description: string;
   link?: string;
   linkText?: string;
+  thumbnail?: string;
 }
+
+function ytThumb(url: string): string | undefined {
+  const match = url.match(/(?:v=|\/)([\w-]{11})/);
+  return match ? `https://img.youtube.com/vi/${match[1]}/mqdefault.jpg` : undefined;
+}
+
+const STCAI_YT = "https://www.youtube.com/watch?v=YLWHUM8X52E&list=PLPuBpVL5aDFuZbYIifwUWmwh1ntBpnvP0&index=3";
+const PEAK_YT = "https://www.youtube.com/watch?v=g91mpiJ3FEU";
 
 export const news: NewsItem[] = [
   {
@@ -45,8 +54,9 @@ export const news: NewsItem[] = [
   {
     date: "2021",
     description: "3rd Prize Best Paper Award at STCAI 2021 & NTU URECA Research Excellence Award",
-    link: "https://www.youtube.com/watch?v=YLWHUM8X52E&list=PLPuBpVL5aDFuZbYIifwUWmwh1ntBpnvP0&index=3",
+    link: STCAI_YT,
     linkText: "STCAI 2021",
+    thumbnail: ytThumb(STCAI_YT),
   },
   {
     date: "Jun 2021",
@@ -63,7 +73,8 @@ export const news: NewsItem[] = [
   {
     date: "Jul 2020",
     description: "Most Promising Leader Award — NTU PEAK Leadership Program",
-    link: "https://www.youtube.com/watch?v=g91mpiJ3FEU",
+    link: PEAK_YT,
     linkText: "NTU PEAK Leadership Program",
+    thumbnail: ytThumb(PEAK_YT),
   },
 ];
