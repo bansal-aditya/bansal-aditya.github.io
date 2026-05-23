@@ -3,7 +3,7 @@ import { news } from "@/data/news";
 export default function NewsSection() {
   return (
     <section id="news" className="border-t border-divider py-7">
-      <h2 className="text-lg font-bold mb-4.5">News & Media</h2>
+      <h2 className="text-lg font-bold mb-4.5 text-center">News & Media</h2>
       <div className="text-[13.5px] leading-[1.8]">
         {news.map((item, i) => (
           <div key={i} className="flex gap-3.5 py-[5px]">

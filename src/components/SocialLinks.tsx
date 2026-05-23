@@ -2,7 +2,7 @@ import { socialLinks } from "@/data/social";
 
 export default function SocialLinks() {
   return (
-    <div className="flex flex-wrap gap-4 mt-4">
+    <div className="flex flex-wrap justify-center gap-4 mt-4">
       {socialLinks.map((link) => (
         <a
           key={link.platform}
