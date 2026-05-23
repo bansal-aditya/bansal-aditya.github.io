@@ -33,8 +33,9 @@ export default function Hero() {
         />
       </div>
       <div className="flex-1 min-w-0">
-        <h1 className="text-[26px] font-bold tracking-tight text-foreground">
-          {profile.name}
+        <h1 className="text-[26px] tracking-tight text-foreground">
+          <span className="font-bold">Aditya</span>{" "}
+          <span className="font-light">Bansal</span>
         </h1>
         <div className="mt-3">
           <PreviewProvider>

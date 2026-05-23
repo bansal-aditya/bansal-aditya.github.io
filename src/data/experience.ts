@@ -21,13 +21,7 @@ export const experience: ExperienceItem[] = [
     logo: "/images/logos/adobe.png",
     description: "Developed tool-augmented LLM application for API execution and task planning",
   },
-  {
-    dateRange: "2022 — 2024",
-    company: "Carnegie Mellon University",
-    role: "M.S. Computational Data Science",
-    logo: "/images/logos/cmu.png",
-    description: "",
-  },
+
   {
     dateRange: "2021",
     company: "IIT Madras",
