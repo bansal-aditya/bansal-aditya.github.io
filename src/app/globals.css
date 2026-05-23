@@ -8,4 +8,5 @@
   --color-link: #0066cc;
   --color-divider: #eceae0;
   --font-sans: "Inter", system-ui, sans-serif;
+  --max-width-content: 720px;
 }
