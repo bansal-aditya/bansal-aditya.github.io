@@ -4,15 +4,17 @@ import SocialLinks from "./SocialLinks";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center gap-7 pt-12 pb-9 md:flex-row md:items-start">
-      <Image
-        src={profile.image}
-        alt={profile.name}
-        width={120}
-        height={120}
-        className="rounded-full object-cover flex-shrink-0 w-[120px] h-[120px]"
-        priority
-      />
+    <section className="flex flex-col items-center gap-7 pt-12 pb-9 md:flex-row md:items-center">
+      <div className="flex-shrink-0 w-[160px] h-[160px] rounded-[40px] overflow-hidden">
+        <Image
+          src={profile.image}
+          alt={profile.name}
+          width={160}
+          height={160}
+          className="object-cover w-full h-full scale-125"
+          priority
+        />
+      </div>
       <div>
         <h1 className="text-[26px] font-bold tracking-tight text-foreground">
           {profile.name}
