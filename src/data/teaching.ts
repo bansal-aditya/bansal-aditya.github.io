@@ -50,9 +50,9 @@ export const teaching: TeachingItem[] = [
     role: "Graduate Teaching Assistant — Introduction to Machine Learning (10-601)",
     organization: "Carnegie Mellon University, under Prof Matt Gormley",
     description: "Conducted recitations, homework sessions, office hours, and grading for ~300 students.",
-    link: "https://www.cs.cmu.edu/~mgormley/courses/10601/",
+    link: "https://www.cs.cmu.edu/~mgormley/courses/10601-s23/people.html",
     linkText: "Course Page",
-    preview: { title: "Intro to Machine Learning", domain: "cs.cmu.edu", description: "CMU 10-601 — Introduction to Machine Learning, Prof Matt Gormley", favicon: gfav("cmu.edu") },
+    preview: { title: "Intro to Machine Learning", domain: "cs.cmu.edu", description: "CMU 10-601 — Introduction to Machine Learning, Spring 2023, Prof Matt Gormley", favicon: gfav("cmu.edu") },
   },
   {
     dateRange: "Fall 2023",
