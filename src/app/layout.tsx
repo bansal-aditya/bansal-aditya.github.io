@@ -9,6 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bansal-aditya.github.io"),
+  applicationName: "Aditya Bansal",
   title: {
     default: "Aditya Bansal | Software Engineer, AI/ML at Google",
     template: "%s | Aditya Bansal",
@@ -70,35 +71,50 @@ export const metadata: Metadata = {
   },
 };
 
-const personSchema = {
+const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Aditya Bansal",
-  url: "https://bansal-aditya.github.io",
-  image: "https://bansal-aditya.github.io/images/profile.jpg",
-  jobTitle: "Software Engineer, AI/ML",
-  worksFor: {
-    "@type": "Organization",
-    name: "Google",
-    url: "https://www.google.com",
-  },
-  alumniOf: [
+  "@graph": [
     {
-      "@type": "CollegeOrUniversity",
-      name: "Carnegie Mellon University",
-      url: "https://www.cmu.edu",
+      "@type": "WebSite",
+      "@id": "https://bansal-aditya.github.io/#website",
+      "url": "https://bansal-aditya.github.io",
+      "name": "Aditya Bansal",
+      "alternateName": [
+        "Aditya Bansal Website",
+        "Aditya Bansal Portfolio"
+      ],
     },
     {
-      "@type": "CollegeOrUniversity",
-      name: "Nanyang Technological University",
-      url: "https://www.ntu.edu.sg",
+      "@type": "Person",
+      "@id": "https://bansal-aditya.github.io/#person",
+      "name": "Aditya Bansal",
+      "url": "https://bansal-aditya.github.io",
+      "image": "https://bansal-aditya.github.io/images/profile.jpg",
+      "jobTitle": "Software Engineer, AI/ML",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Google",
+        "url": "https://www.google.com",
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Carnegie Mellon University",
+          "url": "https://www.cmu.edu",
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Nanyang Technological University",
+          "url": "https://www.ntu.edu.sg",
+        },
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/aditya-bansal-10",
+        "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
+        "https://github.com/bansal-aditya",
+        "https://twitter.com/_AdityaBansal_",
+      ],
     },
-  ],
-  sameAs: [
-    "https://www.linkedin.com/in/aditya-bansal-10",
-    "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
-    "https://github.com/bansal-aditya",
-    "https://twitter.com/_AdityaBansal_",
   ],
 };
 
@@ -112,7 +128,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className={`${inter.className} bg-background text-foreground antialiased`}>
