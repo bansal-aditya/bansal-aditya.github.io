@@ -68,9 +68,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "googled48cec43f97a1b2d",
-  },
 };
 
 const personSchema = {
