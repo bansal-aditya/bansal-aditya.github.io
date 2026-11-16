@@ -24,6 +24,36 @@ function gfav(domain: string) {
 
 export const publications: Publication[] = [
   {
+    title: "FALCON: A Model and Dataset Agnostic Framework for Synthetic Data Generation for NL2SQL Pairs",
+    authors: "D Lee, S Rumsey, J St. Clair, X Tang, A Bansal, Y Shi",
+    venue: "AKBC 2026",
+    year: 2026,
+    links: {
+      paper: "https://aclanthology.org/2026.akbc-1.6/",
+    },
+    preview: { title: "ACL Anthology", domain: "aclanthology.org", description: "FALCON: A Model and Dataset Agnostic Framework for Synthetic Data Generation for NL2SQL Pairs", favicon: gfav("aclanthology.org") },
+  },
+  {
+    title: "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+    authors: "A Tamhane, R Addanki, A Aggarwal, A Bansal, R Wang, C Menguy, S Jain",
+    venue: "COLM 2026 Workshop",
+    year: 2026,
+    links: {
+      paper: "https://arxiv.org/abs/2609.16487",
+    },
+    preview: { title: "arXiv Preprint", domain: "arxiv.org", description: "Skill-based Agentic Evaluation for Real-time Data Science Tasks", favicon: gfav("arxiv.org") },
+  },
+  {
+    title: "REALMS: An AI-Assistant Conversational System for Real-Time Exact Audience Sizing over High-Dimensional Nested Profiles",
+    authors: "H Ma, A Bansal, S Lohiya, S Ranjan",
+    venue: "IEEE ICDM 2026",
+    year: 2026,
+    links: {
+      paper: "https://arxiv.org/abs/2609.30547",
+    },
+    preview: { title: "arXiv Preprint", domain: "arxiv.org", description: "REALMS: An AI-Assistant Conversational System for Real-Time Exact Audience Sizing over High-Dimensional Nested Profiles", favicon: gfav("arxiv.org") },
+  },
+  {
     title: "Human-LLM Collaborative Feature Engineering for Tabular Data",
     authors: "Z Li, A Bansal, J Li, S He, Z Lu, M Zhang, Q Liu, Y Yang, S Jain, M Yin, et al.",
     venue: "ICLR 2026",

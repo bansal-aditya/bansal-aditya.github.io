@@ -8,7 +8,14 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
-    dateRange: "2024 — present",
+    dateRange: "2026 — present",
+    company: "Google",
+    role: "Software Engineer, AI/ML",
+    logo: "/images/logos/google.png",
+    description: "Working on the Gemini Agent Platform",
+  },
+  {
+    dateRange: "2024 — 2026",
     company: "Adobe",
     role: "ML Engineer, AI Agent Orchestrator",
     logo: "/images/logos/adobe.png",
@@ -25,21 +32,21 @@ export const experience: ExperienceItem[] = [
   {
     dateRange: "2021",
     company: "IIT Madras",
-    role: "Research Intern",
+    role: "ML Researcher",
     logo: "/images/logos/iitm.png",
     description: "Weather and climate forecasting using deep learning techniques",
   },
   {
     dateRange: "2021",
     company: "Dyson",
-    role: "ML Engineer (Research)",
+    role: "ML Research Engineer",
     logo: "/images/logos/dyson.png",
     description: "Short-term time series forecasting for air quality prediction",
   },
   {
     dateRange: "2020 — 2021",
     company: "SAP",
-    role: "Full-Stack Developer & Software Engineer",
+    role: "Software Engineer",
     logo: "/images/logos/sap.png",
     description: "ML recommendation system for enterprise LMS",
   },
@@ -53,7 +60,7 @@ export const experience: ExperienceItem[] = [
   {
     dateRange: "2019",
     company: "Rivigo",
-    role: "Software Intern",
+    role: "Software Engineer",
     logo: "/images/logos/rivigo.png",
     description: "",
   },

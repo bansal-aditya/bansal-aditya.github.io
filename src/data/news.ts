@@ -17,11 +17,25 @@ function gfav(domain: string) {
 
 export const news: NewsItem[] = [
   {
-    date: "Jan 2026",
-    description: "Paper on Human-LLM Collaborative Feature Engineering published at ICLR 2026",
-    link: "https://arxiv.org/abs/2601.21060",
-    linkText: "Human-LLM Collaborative Feature Engineering",
-    preview: { title: "arXiv Paper", domain: "arxiv.org", description: "Human-LLM Collaborative Feature Engineering for Tabular Data", favicon: gfav("arxiv.org") },
+    date: "Oct 2026",
+    description: "Paper on FALCON for synthetic NL2SQL data generation published at AKBC 2026",
+    link: "https://aclanthology.org/2026.akbc-1.6/",
+    linkText: "FALCON for synthetic NL2SQL data generation",
+    preview: { title: "ACL Anthology", domain: "aclanthology.org", description: "FALCON: A Model and Dataset Agnostic Framework for Synthetic Data Generation for NL2SQL Pairs", favicon: gfav("aclanthology.org") },
+  },
+  {
+    date: "Oct 2026",
+    description: "Paper on Skill-based Agentic Evaluation for Real-time Data Science Tasks presented at COLM 2026 Workshop",
+    link: "https://arxiv.org/abs/2609.16487",
+    linkText: "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+    preview: { title: "arXiv Paper", domain: "arxiv.org", description: "Skill-based Agentic Evaluation for Real-time Data Science Tasks — COLM 2026 Workshop in AI Measurement", favicon: gfav("arxiv.org") },
+  },
+  {
+    date: "Sep 2026",
+    description: "Paper on REALMS for real-time exact audience sizing accepted at IEEE ICDM 2026",
+    link: "https://arxiv.org/abs/2609.30547",
+    linkText: "REALMS for real-time exact audience sizing",
+    preview: { title: "arXiv Paper", domain: "arxiv.org", description: "REALMS: An AI-Assistant Conversational System for Real-Time Exact Audience Sizing over High-Dimensional Nested Profiles", favicon: gfav("arxiv.org") },
   },
   {
     date: "Feb 2026",
@@ -29,6 +43,25 @@ export const news: NewsItem[] = [
     link: "https://www.ymca.org/locations/urban-services-ymca",
     linkText: "YMCA of San Francisco",
     preview: { title: "YMCA of San Francisco", domain: "ymca.org", description: "Urban Services YMCA — community development and youth programs", favicon: gfav("ymca.org") },
+  },
+  {
+    date: "Jan 2026",
+    description: "Paper on Human-LLM Collaborative Feature Engineering published at ICLR 2026",
+    link: "https://arxiv.org/abs/2601.21060",
+    linkText: "Human-LLM Collaborative Feature Engineering",
+    preview: { title: "arXiv Paper", domain: "arxiv.org", description: "Human-LLM Collaborative Feature Engineering for Tabular Data", favicon: gfav("arxiv.org") },
+  },
+  {
+    date: "Apr 2025",
+    description: "Work on VAE-Based Out-of-Distribution Detectors featured on Duckietown",
+    link: "https://duckietown.com/vae-based-out-of-distribution-detectors-for-embedded-systems/",
+    linkText: "featured on Duckietown",
+    preview: {
+      title: "Duckietown Research Feature",
+      domain: "duckietown.com",
+      description: "Compressing VAE-based OOD detectors for real-time deployment in Duckietown with pruning, quantization, and knowledge distillation.",
+      favicon: gfav("duckietown.com"),
+    },
   },
   {
     date: "Apr 2025",

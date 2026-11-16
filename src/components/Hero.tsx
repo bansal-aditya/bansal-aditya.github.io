@@ -19,6 +19,13 @@ const ntuPreview = {
   favicon: "https://www.google.com/s2/favicons?domain=ntu.edu.sg&sz=64",
 };
 
+const geminiPreview = {
+  title: "Google Cloud Blog",
+  domain: "cloud.google.com",
+  description: "Gemini at Work 2026: Introducing the Gemini agent",
+  favicon: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=64",
+};
+
 export default function Hero() {
   return (
     <section className="flex flex-col items-center gap-7 pt-12 pb-9 md:flex-row md:items-center">
@@ -39,7 +46,13 @@ export default function Hero() {
         <div className="mt-3">
           <PreviewProvider>
             <p className="text-[13.5px] leading-[1.75] text-muted">
-              Hello! I am a Machine Learning Engineer at Google where I am working on the Gemini Agent Platform. I graduated from{" "}
+              Hello! I am a Software Engineer, AI/ML at Google where I am working on the{" "}
+              <PreviewLink
+                href="https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+                text="Gemini Agent Platform"
+                preview={geminiPreview}
+              />
+              . I graduated from{" "}
               <PreviewLink
                 href="https://www.lti.cs.cmu.edu/"
                 text="Carnegie Mellon University's" 
