@@ -46,7 +46,7 @@ export default function Hero() {
         <div className="mt-3">
           <PreviewProvider>
             <p className="text-[13.5px] leading-[1.75] text-muted">
-              Hello! I am a Software Engineer, AI/ML at Google where I am working on the{" "}
+              Hello! I am an ML Engineer at Google where I am working on the{" "}
               <PreviewLink
                 href="https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
                 text="Gemini Agent Platform"
