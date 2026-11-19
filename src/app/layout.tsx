@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Aditya Bansal",
   },
   description:
-    "Aditya Bansal is a Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU alumnus with expertise in Machine Learning, Agentic Systems, and Neural Network Compression.",
+    "Aditya Bansal is a Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU alumnus with expertise in Agentic Systems, LLM Evaluation and Post-training, and Neural Network Compression.",
   keywords: [
     "Aditya",
     "Aditya Bansal",

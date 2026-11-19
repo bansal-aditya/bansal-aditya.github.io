@@ -64,7 +64,7 @@ export default function Hero() {
                 text="Nanyang Technological University"
                 preview={ntuPreview}
               />
-              , Singapore. My interests include Explainable AI, Neural Network Compression, and Applied Machine Learning.
+              , Singapore. My interests include agentic systems, LLM evaluation and post-training, and neural network compression.
             </p>
             <SocialLinks />
           </PreviewProvider>
