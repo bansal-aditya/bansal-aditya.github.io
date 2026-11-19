@@ -29,7 +29,7 @@ export const teaching: TeachingItem[] = [
   },
   {
     dateRange: "2026",
-    role: "Industry Panelist",
+    role: "Invited Industry Panelist",
     organization: "AI4ALL Ignite",
     description: "Shared career paths and AI industry insights with undergraduate students in the AI4ALL Ignite Accelerator program.",
     link: "https://ai-4-all.org/ai4all-ignite/",
