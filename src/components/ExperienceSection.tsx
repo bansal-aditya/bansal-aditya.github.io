@@ -7,7 +7,7 @@ export default function ExperienceSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="experience" className="border-t border-divider py-7">
+    <section id="experience" className="border-t border-divider py-7 scroll-mt-14">
       <h2 className="text-lg font-bold mb-4.5">Experience</h2>
       <div className="relative ml-[110px]">
         {/* Continuous vertical line */}

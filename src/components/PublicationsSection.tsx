@@ -16,7 +16,7 @@ function highlightAuthor(authors: string): React.ReactNode {
 
 export default function PublicationsSection() {
   return (
-    <section id="publications" className="border-t border-divider py-7">
+    <section id="publications" className="border-t border-divider py-7 scroll-mt-14">
       <h2 className="text-lg font-bold mb-4.5">Publications</h2>
       <PreviewProvider>
       <div>

@@ -5,7 +5,7 @@ import { PreviewProvider, PreviewLink } from "./LinkPreview";
 
 export default function NewsSection() {
   return (
-    <section id="news" className="border-t border-divider py-7">
+    <section id="news" className="border-t border-divider py-7 scroll-mt-14">
       <h2 className="text-lg font-bold mb-4.5">News</h2>
       <PreviewProvider>
         <div className="text-[13.5px] leading-[1.8] max-h-[280px] overflow-y-auto pr-2">
