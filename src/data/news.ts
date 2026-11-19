@@ -39,10 +39,10 @@ export const news: NewsItem[] = [
   },
   {
     date: "Mar 2026",
-    description: "Presented Adobe CX Enterprise Coworker at Adobe Summit 2026",
+    description: "Presented Adobe CX Enterprise Coworker and agentic workflows at Adobe Summit 2026",
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7453311224286445568/",
     linkText: "Adobe Summit 2026",
-    preview: { title: "Adobe Summit 2026", domain: "linkedin.com", description: "Presented Adobe CX Enterprise Coworker — agentic AI system for multi-agent coordination", favicon: gfav("linkedin.com") },
+    preview: { title: "Adobe Summit 2026", domain: "linkedin.com", description: "Presented Adobe CX Enterprise Coworker and agentic workflows at Adobe Summit 2026", favicon: gfav("linkedin.com") },
   },
   {
     date: "Mar 2026",
@@ -53,7 +53,7 @@ export const news: NewsItem[] = [
   },
   {
     date: "Feb 2026",
-    description: "Invited panelist sharing career insights for the AI4ALL Ignite accelerator program",
+    description: "Invited industry panelist for the AI4ALL Ignite accelerator program",
     link: "https://www.instagram.com/p/DaiGTS4mjZn/",
     linkText: "AI4ALL Ignite",
     preview: { title: "AI4ALL Ignite Panel", domain: "instagram.com", description: "Industry panel session for students in the AI4ALL Ignite Accelerator program", favicon: gfav("instagram.com") },

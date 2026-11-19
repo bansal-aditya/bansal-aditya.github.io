@@ -17,9 +17,9 @@ export const experience: ExperienceItem[] = [
   {
     dateRange: "2024 — 2026",
     company: "Adobe",
-    role: "ML Engineer, AI Agent Orchestrator",
+    role: "ML Engineer, Enterprise AI",
     logo: "/images/logos/adobe.png",
-    description: "AI Agent Orchestrator — an LLM driven agentic platform for Enterprise Marketing",
+    description: "Adobe CX Enterprise Coworker — an LLM driven agentic platform for Enterprise Marketing",
   },
   {
     dateRange: "2023",
