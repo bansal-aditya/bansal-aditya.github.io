@@ -3,6 +3,7 @@ export interface Publication {
   authors: string;
   venue: string;
   year: number;
+  image?: string;
   citations?: number;
   links: {
     paper?: string;
@@ -28,6 +29,7 @@ export const publications: Publication[] = [
     authors: "D Lee, S Rumsey, J St. Clair, X Tang, A Bansal, Y Shi",
     venue: "AKBC 2026",
     year: 2026,
+    image: "/images/publications/falcon.png",
     links: {
       paper: "https://aclanthology.org/2026.akbc-1.6/",
     },
@@ -38,6 +40,7 @@ export const publications: Publication[] = [
     authors: "A Tamhane, R Addanki, A Aggarwal, A Bansal, R Wang, C Menguy, S Jain",
     venue: "COLM 2026 Workshop",
     year: 2026,
+    image: "/images/publications/skillbased.png",
     links: {
       paper: "https://arxiv.org/abs/2609.16487",
     },
@@ -48,6 +51,7 @@ export const publications: Publication[] = [
     authors: "H Ma, A Bansal, S Lohiya, S Ranjan",
     venue: "IEEE ICDM 2026",
     year: 2026,
+    image: "/images/publications/realms.png",
     links: {
       paper: "https://arxiv.org/abs/2609.30547",
     },
@@ -58,6 +62,7 @@ export const publications: Publication[] = [
     authors: "Z Li, A Bansal, J Li, S He, Z Lu, M Zhang, Q Liu, Y Yang, S Jain, M Yin, et al.",
     venue: "ICLR 2026",
     year: 2026,
+    image: "/images/publications/humanllm.png",
     links: {
       paper: "https://arxiv.org/abs/2601.21060",
     },
@@ -68,6 +73,7 @@ export const publications: Publication[] = [
     authors: "A Bansal, M Yuhas, A Easwaran",
     venue: "IEEE RTCSA 2024",
     year: 2024,
+    image: "/images/publications/ood.png",
     links: {
       paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
     },
@@ -78,6 +84,7 @@ export const publications: Publication[] = [
     authors: "A Bansal, C Tushar, C Guan",
     venue: "STCAI 2021 · 3rd Prize Best Paper Award",
     year: 2021,
+    image: "/images/publications/brainage.png",
     links: {
       paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
       video: "https://www.youtube.com/watch?v=YLWHUM8X52E&list=PLPuBpVL5aDFuZbYIifwUWmwh1ntBpnvP0&index=3",
@@ -89,6 +96,7 @@ export const publications: Publication[] = [
     authors: "A Bansal, C Guan",
     venue: "ICUR 2020 (Monash University & University of Warwick)",
     year: 2020,
+    image: "/images/publications/classification.png",
     links: {
       paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
     },
