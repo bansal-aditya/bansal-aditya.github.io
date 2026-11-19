@@ -47,9 +47,9 @@ export const news: NewsItem[] = [
   {
     date: "Jan 2026",
     description: "Paper on Human-LLM Collaborative Feature Engineering published at ICLR 2026",
-    link: "https://arxiv.org/abs/2601.21060",
+    link: "https://proceedings.iclr.cc/paper_files/paper/2026/file/e0fbc0f2e35e58aeffe5524a69ba90e5-Paper-Conference.pdf",
     linkText: "Human-LLM Collaborative Feature Engineering",
-    preview: { title: "arXiv Paper", domain: "arxiv.org", description: "Human-LLM Collaborative Feature Engineering for Tabular Data", favicon: gfav("arxiv.org") },
+    preview: { title: "ICLR 2026 Proceedings", domain: "iclr.cc", description: "Human-LLM Collaborative Feature Engineering for Tabular Data — Official ICLR 2026 PDF", favicon: gfav("iclr.cc") },
   },
   {
     date: "Apr 2025",
@@ -70,9 +70,9 @@ export const news: NewsItem[] = [
   {
     date: "Aug 2024",
     description: "Paper on Compressing VAE-Based OOD Detectors accepted at IEEE RTCSA 2024",
-    link: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
+    link: "https://www.computer.org/csdl/proceedings-article/rtcsa/2024/879500a037/20IjIKOA1Ko",
     linkText: "Compressing VAE-Based OOD Detectors",
-    preview: { title: "Google Scholar", domain: "scholar.google.com", description: "Compressing VAE-Based OOD Detectors for Embedded Deployment — IEEE RTCSA 2024", favicon: gfav("scholar.google.com") },
+    preview: { title: "IEEE Computer Society (RTCSA 2024)", domain: "computer.org", description: "Compressing VAE-Based Out-of-Distribution Detectors for Embedded Deployment — IEEE RTCSA 2024", favicon: gfav("computer.org") },
   },
   {
     date: "Oct 2024",

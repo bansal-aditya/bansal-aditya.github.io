@@ -64,9 +64,9 @@ export const publications: Publication[] = [
     year: 2026,
     image: "/images/publications/humanllm.png",
     links: {
-      paper: "https://arxiv.org/abs/2601.21060",
+      paper: "https://proceedings.iclr.cc/paper_files/paper/2026/file/e0fbc0f2e35e58aeffe5524a69ba90e5-Paper-Conference.pdf",
     },
-    preview: { title: "arXiv Preprint", domain: "arxiv.org", description: "Human-LLM Collaborative Feature Engineering for Tabular Data", favicon: gfav("arxiv.org") },
+    preview: { title: "ICLR 2026 Proceedings", domain: "iclr.cc", description: "Human-LLM Collaborative Feature Engineering for Tabular Data — Official ICLR 2026 PDF", favicon: gfav("iclr.cc") },
   },
   {
     title: "Compressing VAE-Based Out-of-Distribution Detectors for Embedded Deployment",
@@ -75,9 +75,9 @@ export const publications: Publication[] = [
     year: 2024,
     image: "/images/publications/ood.png",
     links: {
-      paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
+      paper: "https://www.computer.org/csdl/proceedings-article/rtcsa/2024/879500a037/20IjIKOA1Ko",
     },
-    preview: { title: "Google Scholar", domain: "scholar.google.com", description: "Compressing VAE-Based OOD Detectors for Embedded Deployment", favicon: gfav("scholar.google.com") },
+    preview: { title: "IEEE Computer Society (RTCSA 2024)", domain: "computer.org", description: "Compressing VAE-Based Out-of-Distribution Detectors for Embedded Deployment", favicon: gfav("computer.org") },
   },
   {
     title: "Using Explainable AI Methods to Explain Bias in Brain Age Prediction",
@@ -86,10 +86,10 @@ export const publications: Publication[] = [
     year: 2021,
     image: "/images/publications/brainage.png",
     links: {
-      paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
+      paper: "https://www.youtube.com/watch?v=YLWHUM8X52E&list=PLPuBpVL5aDFuZbYIifwUWmwh1ntBpnvP0&index=3",
       video: "https://www.youtube.com/watch?v=YLWHUM8X52E&list=PLPuBpVL5aDFuZbYIifwUWmwh1ntBpnvP0&index=3",
     },
-    preview: { title: "Google Scholar", domain: "scholar.google.com", description: "Using Explainable AI to explain Bias in Brain Age Prediction", favicon: gfav("scholar.google.com") },
+    preview: { title: "STCAI 2021 Video Presentation", domain: "youtube.com", description: "Using Explainable AI Methods to Explain Bias in Brain Age Prediction", favicon: gfav("youtube.com") },
   },
   {
     title: "Classification of EEG Signals for Brain Computer Interfaces: A Machine Learning Approach",
@@ -109,8 +109,8 @@ export const publications: Publication[] = [
     year: 2022,
     image: "/images/publications/compression.png",
     links: {
-      paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
+      paper: "https://dr.ntu.edu.sg/entities/publication/0ee44b5a-644a-4371-8daa-b6c9d8f709ca",
     },
-    preview: { title: "Google Scholar", domain: "scholar.google.com", description: "Neural Network Compression for OOD Detection — B.Eng Thesis", favicon: gfav("scholar.google.com") },
+    preview: { title: "NTU Digital Repository", domain: "dr.ntu.edu.sg", description: "Neural Network Compression Techniques for Out-of-Distribution Detection — NTU DR", favicon: gfav("ntu.edu.sg") },
   },
 ];
