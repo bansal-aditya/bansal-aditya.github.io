@@ -20,7 +20,7 @@ const ntuPreview = {
 };
 
 const geminiPreview = {
-  title: "Google Cloud Blog",
+  title: "Gemini Agent Platform",
   domain: "cloud.google.com",
   description: "Gemini at Work 2026: Introducing the Gemini agent",
   favicon: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=64",
