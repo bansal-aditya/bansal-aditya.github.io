@@ -11,7 +11,7 @@ export const experience: ExperienceItem[] = [
     dateRange: "2026 — present",
     company: "Google",
     role: "Software Engineer, AI/ML",
-    logo: "/images/logos/google.png",
+    logo: "/images/logos/google.svg",
     description: "Working on the Gemini Agent Platform",
   },
   {

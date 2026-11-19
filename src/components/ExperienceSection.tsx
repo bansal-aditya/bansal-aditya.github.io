@@ -41,7 +41,9 @@ export default function ExperienceSection() {
                   <img
                     src={item.logo}
                     alt={item.company}
-                    className="w-5 h-5 object-contain rounded-sm flex-shrink-0"
+                    className={`object-contain rounded-sm flex-shrink-0 ${
+                      item.company === "Google" ? "w-[22px] h-[22px]" : "w-5 h-5"
+                    }`}
                   />
                 )}
                 <div>
