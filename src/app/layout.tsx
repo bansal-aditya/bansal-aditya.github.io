@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Aditya Bansal",
   },
   description:
-    "Aditya Bansal is a Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU MCDS alumnus with expertise in Machine Learning, Agentic Systems, and Neural Network Compression.",
+    "Aditya Bansal is a Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU alumnus with expertise in Machine Learning, Agentic Systems, and Neural Network Compression.",
   keywords: [
     "Aditya",
     "Aditya Bansal",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aditya Bansal | Software Engineer, AI/ML at Google",
     description:
-      "Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU MCDS alumnus.",
+      "Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU alumnus.",
     url: "https://bansal-aditya.github.io",
     siteName: "Aditya Bansal",
     images: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Aditya Bansal | Software Engineer, AI/ML at Google",
     description:
-      "Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU MCDS alumnus.",
+      "Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU alumnus.",
     creator: "@_AdityaBansal_",
     images: ["/images/profile.jpg"],
   },
