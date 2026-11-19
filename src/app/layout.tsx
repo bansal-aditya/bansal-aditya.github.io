@@ -17,10 +17,16 @@ export const metadata: Metadata = {
   description:
     "Aditya Bansal is a Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU MCDS alumnus with expertise in Machine Learning, Agentic Systems, and Neural Network Compression.",
   keywords: [
+    "Aditya",
     "Aditya Bansal",
+    "Aditya Google",
+    "Aditya CMU",
+    "Aditya Delhi",
+    "Aditya Google CMU Delhi",
     "Aditya Bansal Google",
     "Aditya Bansal CMU",
     "Aditya Bansal NTU",
+    "Aditya Bansal Delhi",
     "Software Engineer AI/ML",
     "Machine Learning Engineer",
     "Gemini Agent Platform",
@@ -88,6 +94,10 @@ const jsonLd = {
       "@type": "Person",
       "@id": "https://bansal-aditya.github.io/#person",
       "name": "Aditya Bansal",
+      "alternateName": [
+        "Aditya",
+        "Aditya Google CMU Delhi"
+      ],
       "url": "https://bansal-aditya.github.io",
       "image": "https://bansal-aditya.github.io/images/profile.jpg",
       "jobTitle": "Software Engineer, AI/ML",
