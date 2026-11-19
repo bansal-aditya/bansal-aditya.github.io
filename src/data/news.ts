@@ -65,7 +65,7 @@ export const news: NewsItem[] = [
   },
   {
     date: "Apr 2025",
-    description: "Serving as ACL Industry Track Paper Reviewer (ACL 2025, 2026)",
+    description: "Served as ACL Industry Track Paper Reviewer (ACL 2025, 2026)",
   },
   {
     date: "Aug 2024",

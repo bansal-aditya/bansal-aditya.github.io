@@ -28,6 +28,20 @@ export const teaching: TeachingItem[] = [
     preview: { title: "Braven", domain: "bebraven.org", description: "Leadership & Career Accelerator for underrepresented college students", favicon: gfav("bebraven.org") },
   },
   {
+    dateRange: "2025",
+    role: "Industry Capstone Mentor",
+    organization: "UC Santa Cruz",
+    description: "Mentored NLP Master's student teams on multilingual synthetic data generation for text-to-SQL tasks.",
+    link: "https://nlp.ucsc.edu/capstone-projects/",
+    linkText: "UCSC NLP Capstone",
+    preview: {
+      title: "UCSC NLP Capstone",
+      domain: "nlp.ucsc.edu",
+      description: "UC Santa Cruz NLP Master's Capstone Projects — Industry mentorship program",
+      favicon: gfav("ucsc.edu"),
+    },
+  },
+  {
     dateRange: "Fall, Spring 2023",
     role: "Graduate AI Mentor (PAIR Program)",
     organization: "Carnegie Mellon University",
