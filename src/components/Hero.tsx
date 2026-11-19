@@ -5,11 +5,11 @@ import { profile } from "@/data/profile";
 import SocialLinks from "./SocialLinks";
 import { PreviewProvider, PreviewLink } from "./LinkPreview";
 
-const ltiPreview = {
-  title: "Language Technologies Institute",
-  domain: "lti.cs.cmu.edu",
-  description: "School of Computer Science, Carnegie Mellon University",
-  favicon: "https://www.google.com/s2/favicons?domain=lti.cs.cmu.edu&sz=64",
+const cmuPreview = {
+  title: "School of Computer Science",
+  domain: "cs.cmu.edu",
+  description: "Carnegie Mellon University — School of Computer Science",
+  favicon: "https://www.google.com/s2/favicons?domain=cs.cmu.edu&sz=64",
 };
 
 const ntuPreview = {
@@ -54,11 +54,11 @@ export default function Hero() {
               />
               . I graduated from{" "}
               <PreviewLink
-                href="https://www.lti.cs.cmu.edu/"
-                text="Carnegie Mellon University's" 
-                preview={ltiPreview}
+                href="https://www.cs.cmu.edu/"
+                text="Carnegie Mellon University's School of Computer Science"
+                preview={cmuPreview}
               />
-              {" "}Language Technologies Institute with a Master&apos;s and with a B.Eng. in Computer Science with a specialization in AI from{" "}
+              {" "}with a Master&apos;s and with a B.Eng. in Computer Science with a specialization in AI from{" "}
               <PreviewLink
                 href="https://www.ntu.edu.sg/computing"
                 text="Nanyang Technological University"
