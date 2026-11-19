@@ -28,6 +28,20 @@ export const teaching: TeachingItem[] = [
     preview: { title: "Braven", domain: "bebraven.org", description: "Leadership & Career Accelerator for underrepresented college students", favicon: gfav("bebraven.org") },
   },
   {
+    dateRange: "2026",
+    role: "Industry Panelist",
+    organization: "AI4ALL Ignite",
+    description: "Shared career paths and AI industry insights with undergraduate students in the AI4ALL Ignite Accelerator program.",
+    link: "https://ai-4-all.org/ai4all-ignite/",
+    linkText: "AI4ALL Ignite",
+    preview: {
+      title: "AI4ALL Ignite",
+      domain: "ai-4-all.org",
+      description: "AI4ALL Ignite Accelerator — mentorship and career development in AI for underrepresented students",
+      favicon: gfav("ai-4-all.org"),
+    },
+  },
+  {
     dateRange: "2025",
     role: "Industry Capstone Mentor",
     organization: "UCSC MS NLP",

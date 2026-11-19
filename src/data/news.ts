@@ -38,6 +38,27 @@ export const news: NewsItem[] = [
     preview: { title: "arXiv Paper", domain: "arxiv.org", description: "REALMS: An AI-Assistant Conversational System for Real-Time Exact Audience Sizing over High-Dimensional Nested Profiles", favicon: gfav("arxiv.org") },
   },
   {
+    date: "Mar 2026",
+    description: "Showcased agentic AI workflows and Adobe CX Enterprise Coworker at Adobe Summit 2026",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7453311224286445568/",
+    linkText: "Adobe Summit 2026",
+    preview: { title: "Adobe Summit 2026", domain: "linkedin.com", description: "Showcased Adobe CX Enterprise Coworker — agentic AI system for multi-agent coordination", favicon: gfav("linkedin.com") },
+  },
+  {
+    date: "Mar 2026",
+    description: "Panelist at the Spartan Analytics x Braven Portfolio Workshop at SJSU",
+    link: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7442777233397833728/",
+    linkText: "Braven Portfolio Workshop",
+    preview: { title: "Braven at SJSU", domain: "linkedin.com", description: "Projects to Profession: Data Analytics Portfolio Workshop in collaboration with Braven at SJSU", favicon: gfav("linkedin.com") },
+  },
+  {
+    date: "Feb 2026",
+    description: "Industry Panelist sharing career insights for the AI4ALL Ignite accelerator program",
+    link: "https://www.instagram.com/p/DaiGTS4mjZn/",
+    linkText: "AI4ALL Ignite",
+    preview: { title: "AI4ALL Ignite Panel", domain: "instagram.com", description: "Industry panel session for students in the AI4ALL Ignite Accelerator program", favicon: gfav("instagram.com") },
+  },
+  {
     date: "Feb 2026",
     description: "Joined YMCA of San Francisco as Board Member, Urban Philanthropy Board",
     link: "https://www.ymca.org/locations/urban-services-ymca",
