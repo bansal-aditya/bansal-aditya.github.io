@@ -30,12 +30,12 @@ export const teaching: TeachingItem[] = [
   {
     dateRange: "2025",
     role: "Industry Capstone Mentor",
-    organization: "UC Santa Cruz",
+    organization: "UCSC MS NLP",
     description: "Mentored NLP Master's student teams on multilingual synthetic data generation for text-to-SQL tasks.",
     link: "https://nlp.ucsc.edu/capstone-projects/",
-    linkText: "UCSC NLP Capstone",
+    linkText: "Capstone Projects",
     preview: {
-      title: "UCSC NLP Capstone",
+      title: "UCSC MS NLP Capstone",
       domain: "nlp.ucsc.edu",
       description: "UC Santa Cruz NLP Master's Capstone Projects — Industry mentorship program",
       favicon: gfav("ucsc.edu"),
