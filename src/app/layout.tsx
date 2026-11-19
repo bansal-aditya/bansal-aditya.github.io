@@ -11,17 +11,17 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bansal-aditya.github.io"),
   applicationName: "Aditya Bansal",
   title: {
-    default: "Aditya Bansal | ML Engineer at Google",
+    default: "Aditya Bansal | Software Engineer, AI/ML at Google",
     template: "%s | Aditya Bansal",
   },
   description:
-    "Aditya Bansal is an ML Engineer at Google working on the Gemini Agent Platform. CMU MCDS alumnus with expertise in Machine Learning, Agentic Systems, and Neural Network Compression.",
+    "Aditya Bansal is a Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU MCDS alumnus with expertise in Machine Learning, Agentic Systems, and Neural Network Compression.",
   keywords: [
     "Aditya Bansal",
     "Aditya Bansal Google",
     "Aditya Bansal CMU",
     "Aditya Bansal NTU",
-    "ML Engineer",
+    "Software Engineer AI/ML",
     "Machine Learning Engineer",
     "Gemini Agent Platform",
     "Google AI",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     canonical: "https://bansal-aditya.github.io",
   },
   openGraph: {
-    title: "Aditya Bansal | ML Engineer at Google",
+    title: "Aditya Bansal | Software Engineer, AI/ML at Google",
     description:
-      "ML Engineer at Google working on the Gemini Agent Platform. CMU MCDS alumnus.",
+      "Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU MCDS alumnus.",
     url: "https://bansal-aditya.github.io",
     siteName: "Aditya Bansal",
     images: [
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Aditya Bansal | ML Engineer at Google",
+    title: "Aditya Bansal | Software Engineer, AI/ML at Google",
     description:
-      "ML Engineer at Google working on the Gemini Agent Platform. CMU MCDS alumnus.",
+      "Software Engineer, AI/ML at Google working on the Gemini Agent Platform. CMU MCDS alumnus.",
     creator: "@_AdityaBansal_",
     images: ["/images/profile.jpg"],
   },
@@ -90,7 +90,7 @@ const jsonLd = {
       "name": "Aditya Bansal",
       "url": "https://bansal-aditya.github.io",
       "image": "https://bansal-aditya.github.io/images/profile.jpg",
-      "jobTitle": "ML Engineer",
+      "jobTitle": "Software Engineer, AI/ML",
       "worksFor": {
         "@type": "Organization",
         "name": "Google",
