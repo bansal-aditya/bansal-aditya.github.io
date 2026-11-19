@@ -11,7 +11,7 @@ const ArrowIcon = () => (
 
 export default function TeachingSection() {
   return (
-    <section id="teaching" className="border-t border-divider py-7 scroll-mt-14">
+    <section id="teaching" className="border-t border-divider py-7 scroll-mt-8">
       <h2 className="text-lg font-bold mb-4.5">Teaching & Mentorship</h2>
       <PreviewProvider>
         <div>
