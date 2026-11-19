@@ -107,6 +107,7 @@ export const publications: Publication[] = [
     authors: "A Bansal",
     venue: "B.Eng Thesis, Nanyang Technological University",
     year: 2022,
+    image: "/images/publications/compression.png",
     links: {
       paper: "https://scholar.google.com/citations?user=_5ynCbkAAAAJ&hl=en",
     },
