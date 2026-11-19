@@ -55,10 +55,10 @@ export default function Hero() {
               . I graduated from{" "}
               <PreviewLink
                 href="https://www.cs.cmu.edu/"
-                text="Carnegie Mellon University's School of Computer Science"
+                text="Carnegie Mellon University's"
                 preview={cmuPreview}
               />
-              {" "}with a Master&apos;s and with a B.Eng. in Computer Science with a specialization in AI from{" "}
+              {" "}School of Computer Science with a Master&apos;s and with a B.Eng. in Computer Science with a specialization in AI from{" "}
               <PreviewLink
                 href="https://www.ntu.edu.sg/computing"
                 text="Nanyang Technological University"
